@@ -1,0 +1,14 @@
+# 默认注释了源码仓库，如有需要可自行取消注释
+deb [trusted=yes] https://mirrors.aliyun.com/ubuntu-ports/ jammy main restricted universe multiverse
+# deb-src https://mirrors.aliyun.com/ubuntu-ports/ xenial main main restricted universe multiverse
+deb [trusted=yes] https://mirrors.aliyun.com/ubuntu-ports/ jammy-updates main restricted universe multiverse
+# deb-src https://mirrors.aliyun.com/ubuntu-ports/ jammy-updates main restricted universe multiverse
+deb [trusted=yes] https://mirrors.aliyun.com/ubuntu-ports/ jammy-backports main restricted universe multiverse
+# deb-src https://mirrors.aliyun.com/ubuntu-ports/ jammy-backports main restricted universe multiverse
+deb [trusted=yes] https://mirrors.aliyun.com/ubuntu-ports/ jammy-security main restricted universe multiverse
+# deb-src https://mirrors.aliyun.com/ubuntu-ports/ jammy-security main restricted universe multiverse
+
+# 预发布软件源，不建议启用
+# deb https://mirrors.aliyun.com/ubuntu-ports/ xenial-proposed main restricted universe multiverse
+# deb-src https://mirrors.aliyun.com/ubuntu-ports/ xenial-proposed main restricted universe multiverse
+
