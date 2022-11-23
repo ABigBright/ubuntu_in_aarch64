@@ -12,8 +12,8 @@ ENV KERNEL_BUILDDEPS="git-core gnupg flex bison gperf build-essential zip curl \
         libxml2-utils xsltproc gawk unzip device-tree-compiler" \
     BUILDROOT_BUILDDEPS="libfile-which-perl sed make binutils gcc g++ bash \
         patch gzip bzip2 perl tar cpio python3 unzip rsync file bc libmpc3 \
-        git repo texinfo pkg-config cmake tree python3" \
-    TOOLS="genext2fs time wget liblz4-tool vim" \
+        git repo texinfo pkg-config cmake tree python3 python3-pip" \
+    TOOLS="genext2fs time wget liblz4-tool vim chrpath diffstat zstd apt-file locales" \
     PROJECT="/home/studio"
 
 # Update repository of Alibaba
@@ -41,6 +41,8 @@ RUN sed -i 's/https:/http:/g' /etc/apt/sources.list \
     && apt-get install -y $KERNEL_BUILDDEPS \
     && apt-get install -y $BUILDROOT_BUILDDEPS \
     && apt-get install -y $TOOLS \
+    && echo 'en_US.UTF-8 UTF-8' >> /etc/locale.gen  \
+    && locale-gen \
 # Clean
     && apt-get clean \
     && apt-get autoclean \
