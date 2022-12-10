@@ -1,7 +1,7 @@
 # Firefly development environment based on Ubuntu 16.04 LTS.
 
 # Start with Ubuntu 22.04 LTS.
-FROM ubuntu:22.04
+FROM ubuntu:18.04
 
 MAINTAINER briq <990647625@qq.com>
 
@@ -13,7 +13,7 @@ ENV KERNEL_BUILDDEPS="git-core gnupg flex bison gperf build-essential zip curl \
     BUILDROOT_BUILDDEPS="libfile-which-perl sed make binutils gcc g++ bash \
         patch gzip bzip2 perl tar cpio python3 unzip rsync file bc libmpc3 \
         git repo texinfo pkg-config cmake tree python3 python3-pip" \
-    TOOLS="genext2fs time wget liblz4-tool vim chrpath diffstat zstd apt-file locales" \
+    TOOLS="genext2fs time wget liblz4-tool vim chrpath diffstat zstd apt-file locales quilt" \
     PROJECT="/home/studio"
 
 # Update repository of Alibaba
