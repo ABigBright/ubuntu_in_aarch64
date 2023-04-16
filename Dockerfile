@@ -13,7 +13,7 @@ ENV KERNEL_BUILDDEPS="git-core gnupg flex bison gperf build-essential zip curl \
     BUILDROOT_BUILDDEPS="libfile-which-perl sed make binutils gcc g++ bash \
         patch gzip bzip2 perl tar cpio python3 unzip rsync file bc libmpc3 \
         git repo texinfo pkg-config cmake tree python3 python3-pip" \
-    TOOLS="genext2fs time wget liblz4-tool vim chrpath diffstat zstd apt-file locales quilt" \
+    TOOLS="genext2fs time wget liblz4-tool vim chrpath diffstat zstd apt-file locales quilt gdb" \
     PROJECT="/home/studio"
 
 # Update repository of Alibaba
