@@ -1,7 +1,7 @@
 # Firefly development environment based on Ubuntu 16.04 LTS.
 
 # Start with Ubuntu 22.04 LTS.
-FROM ubuntu:22.04
+FROM --platform=linux/amd64 ubuntu:22.04
 
 MAINTAINER briq <990647625@qq.com>
 
